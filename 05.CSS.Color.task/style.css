@@ -14,43 +14,46 @@
 }
 ul {
   color: red;
+  list-style-type: none;
+  
 }
-.head1 {
+.section1 {
   background-color: green;
   height: 90px;
 }
-.head2 {
+.heading3 {
   color: yellow;
   height: 30px;
 }
-.head3 {
+.div1 {
   color: blue;
   height: 30px;
 }
-.head4 {
+.span1 {
   color: rgb(165, 108, 42);
 }
-.head5 {
-  color: yellow;
-}
-.head10{
+.section2{
   background-color: green;
 }
-.head6 {
+.heading1 {
+  color: yellow;
+}
+
+.span2 {
   color: blue;
 }
-.head7 {
+.span3 {
   color: rgb(165, 108, 42);
 }
-.head8{
+.section3{
   background-color: green;
   height: 100px;
 }
-.head9 {
+.img1 {
   color: aqua;
 }
 table,th,td{
-    margin: ;
+   border-collapse: collapse;
   border: 1px solid blue;
 }
 #tbl{

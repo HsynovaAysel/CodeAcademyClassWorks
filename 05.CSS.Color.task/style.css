@@ -17,8 +17,7 @@ ul {
 }
 .head1 {
   background-color: green;
-  height: 300px;
-  background-size: cover;
+  height: 90px;
 }
 .head2 {
   color: yellow;
@@ -34,13 +33,20 @@ ul {
 .head5 {
   color: yellow;
 }
+.head10{
+  background-color: green;
+}
 .head6 {
   color: blue;
 }
 .head7 {
   color: rgb(165, 108, 42);
 }
-.head8 {
+.head8{
+  background-color: green;
+  height: 100px;
+}
+.head9 {
   color: aqua;
 }
 table,th,td{
@@ -51,3 +57,11 @@ table,th,td{
     background-color: aqua;
     height: 100px;
 }
+#label{ 
+  background-color: rgb(116, 116, 197);
+  margin:10px;
+  padding: 10px;}
+  #image{
+  background-color: pink;
+  height: 300px;
+  }

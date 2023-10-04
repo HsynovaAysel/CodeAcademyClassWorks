@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.head {
+#head {
   background-image: url("./harry.jpg");
   color: white;
   height: 250px;
@@ -17,39 +17,39 @@ ul {
   list-style-type: none;
   
 }
-.section1 {
+#section1 {
   background-color: green;
   height: 90px;
 }
-.heading3 {
+#heading3 {
   color: yellow;
   height: 30px;
 }
-.div1 {
+#div1 {
   color: blue;
   height: 30px;
 }
-.span1 {
+#span1 {
   color: rgb(165, 108, 42);
 }
-.section2{
+#section2{
   background-color: green;
 }
-.heading1 {
+#heading1 {
   color: yellow;
 }
 
-.span2 {
+#span2 {
   color: blue;
 }
-.span3 {
+#span3 {
   color: rgb(165, 108, 42);
 }
-.section3{
+#section3{
   background-color: green;
   height: 100px;
 }
-.img1 {
+#img1 {
   color: aqua;
 }
 table,th,td{

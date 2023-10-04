@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.head {
+  background-image: url("./harry.jpg");
+  color: white;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ul {
+  color: red;
+}
+.head1 {
+  background-color: green;
+  height: 300px;
+  background-size: cover;
+}
+.head2 {
+  color: yellow;
+  height: 30px;
+}
+.head3 {
+  color: blue;
+  height: 30px;
+}
+.head4 {
+  color: rgb(165, 108, 42);
+}
+.head5 {
+  color: yellow;
+}
+.head6 {
+  color: blue;
+}
+.head7 {
+  color: rgb(165, 108, 42);
+}
+.head8 {
+  color: aqua;
+}
+table,th,td{
+    margin: ;
+  border: 1px solid blue;
+}
+#tbl{
+    background-color: aqua;
+    height: 100px;
+}

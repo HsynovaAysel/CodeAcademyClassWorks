@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 #head {
@@ -94,6 +95,8 @@ table,th,td{
   #image2{
     background-color: pink;
     height: 150px;
-    opacity: 0.5;
 
   }
+#img2{
+  opacity: 0.5;
+}

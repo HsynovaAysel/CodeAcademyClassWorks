@@ -43,16 +43,19 @@
 }
 .section3 {
   border: 1px solid brown;
+  height: 40vh;
   margin: 20px;
-  padding 50px;
+ 
 }
 .section3 .text3 {
   background-color: white;
   border: 2px solid grey;
   width: 20%;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 50px;
-  margin-left: 50px;
+  margin-left: 10px;
+
+
 }
 
 .section3 .text4 {
@@ -60,6 +63,8 @@
   border: 2px solid grey;
   margin-top: 20px;
   margin-bottom: 50px;
-  margin-left: 50px;
+  margin-left: 10px;
+  margin-right: 400px;
+  p
 }
 

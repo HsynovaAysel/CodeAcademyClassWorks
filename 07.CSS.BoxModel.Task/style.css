@@ -1,0 +1,83 @@
+.text {
+  font-size: 30px;
+  text-decoration: underline;
+  color: blue;
+  font-family: "Roboto Mono", monospace;
+  text-shadow: 5px 5px 3px rgb(24, 24, 223);
+}
+.text1 {
+  font-size: 40px;
+  color: blueviolet;
+  font-family: "Martian Mono", monospace;
+}
+.text2 {
+    color: gray;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    
+}
+.text3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: blueviolet;
+  text-shadow: 2px 3px 5px rgb(14, 2, 26);
+  text-decoration: overline dotted;
+  font-size: 40px;
+}
+.text4 {
+  color: green;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 30px;
+}
+.text5 {
+    color: gray;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.text6 {
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-decoration: underline double;
+}
+.text7 {
+    color: gray;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.text8 {
+  color: darkorange;
+  font-size: 30px;
+  text-shadow: 5px 4px 5px black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.text9 {
+  color: gray;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.text10 {
+  color: brown;
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+  font-weight: 300;
+  text-decoration: underline dashed;
+  text-shadow: 3px 5px 5px rgb(87, 4, 4);
+}
+.text11 {
+  color: grey;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+.text12 {color: blue;
+    text-decoration: underline;
+    font-family: 'Martian Mono', monospace;
+    font-weight: 500;
+    font-size: 50PX;
+    text-shadow: -5px -5px 5px rgb(6, 6, 26);
+}
+.text13{color: gray;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+ span{
+    color:black;
+    font-weight: 300;
+    
+}

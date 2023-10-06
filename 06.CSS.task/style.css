@@ -43,7 +43,7 @@
 }
 .section3 {
   border: 1px solid brown;
-  height: 40vh;
+  height: 50vh;
   margin: 20px;
  
 }
@@ -65,6 +65,6 @@
   margin-bottom: 50px;
   margin-left: 10px;
   margin-right: 400px;
-  p
+  height: 100px;
 }
 

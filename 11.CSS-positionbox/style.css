@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 200vh;
+  background-color: rgba(211, 163, 163, 0.555);
+}
+.container .text {
+  border: 3px solid darkblue;
+}
+.container .aqua {
+  margin-left: 40PX;
+  background-color: aqua;
+  position: relative;
+  margin-top: 110px;
+}
+.container .blue {
+margin-left: 10px;
+  background-color: blue;
+  position: sticky;
+  
+ 
+}
+.container .bisque {height: 100px;
+  background-color: burlywood;
+  position: fixed;
+  top: 0;
+  margin-left: 10px;
+
+}
+.container .tell {
+  background-color: teal;
+  margin: 10px ;
+}

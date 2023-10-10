@@ -6,76 +6,85 @@
 body {
   height: 100vh;
 }
-
+.green {
+  color: green;
+}
 #container {
   display: flex;
   height: 80%;
   width: 100%;
-  background-color: rgb(213, 220, 226);
-  padding: 150px;
+  background-color: rgb(237, 241, 245);
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
 }
-
-.content {
+.container {
   height: 70%;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  margin: 20px;
 }
-.green {
-  color: green;
+.container p {
+  margin: 10px;
+  font-family: "Tilt Neon", sans-serif;
 }
-button {
-  background-color: green;
-  color: white;
+.container p i {
+  margin: 8px;
+}
+#contact {
+  background-color: white;
+  border-radius: 10px;
+  height: 60%;
 }
 .contact {
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
-.content div{
-  margin: 10px 0;
-
-}
-#contact {
- 
-  background-color: white;
-  border-radius: 5px;
-  height: 1;
-}
-h2 {
+h3 {
+  font-family: "Crete Round", serif;
   display: flex;
   justify-content: center;
-  color: blue;
+  color: rgb(115, 22, 138);
+  margin: 10px 0;
 }
-button{display: flex;
+.form {
+  background-color: rgb(237, 241, 245);
+  border: none;
+  width: 25vw;
+  border-radius: 3px;
+}
+input {
+  padding: 5px;
+  margin: 10px 30px;
+}
+textarea {
+  margin: 10px 30px 40px 30px;
+  padding: 20px;
+}
+button {
+  display: flex;
   justify-content: center;
+  align-items: center;
   border: none;
-  width: 24vw;
- 
-}
-input{margin: 10px 35px;
-  background-color: rgb(213, 220, 226);
-  border: none;
-  width: 18vw;
-
-}
-textarea{
- margin:   20px 35px;
- background-color: rgb(213, 220, 226);
-border: none;
-width: 18vw;
-height: 50px;
-  
-}
-
-footer{background-color: black;
-height: 20%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;}
-footer div {
+  height: 25px;
+  width: 30vw;
+  background-color: green;
   color: white;
+  border-radius: 0 0 10px 10px;
+}
+ footer  {
+  background-color: black;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.foot div {
+  color: white;
+  font-family: "Tilt Neon", sans-serif;
+}
+.foot div i {
+  margin: 5px;
 }

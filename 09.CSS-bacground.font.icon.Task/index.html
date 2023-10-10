@@ -12,54 +12,63 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <section id="container">
       <div class="container">
-        <div class="content">
-          <div>
-            <p class="green">
-              <i class="fa-solid fa-location-arrow"></i>Address
-            </p>
-            <p>523 N FAIRFAX AVE LOS ANGELES,CA 90048</p>
-          </div>
-          <div>
-            <p class="green"><i class="fa-solid fa-envelope"></i>Email</p>
-            <p>EMAIL@EMAIL.COM</p>
-          </div>
-          <div>
-            <p class="green"><i class="fa-solid fa-phone"></i>Telephone</p>
-            <p>+ 123 456 798</p>
-          </div>
+        <div>
+          <p class="green"><i class="fa-solid fa-location-arrow"></i>Address</p>
+          <p>523 N FAIRFAX AVE LOS ANGELES,CA 90048</p>
+        </div>
+        <div>
+          <p class="green"><i class="fa-solid fa-envelope"></i>Email</p>
+          <p>EMAIL@EMAIL.COM</p>
+        </div>
+        <div>
+          <p class="green"><i class="fa-solid fa-phone"></i>Telephone</p>
+          <p>+ 123 456 798</p>
         </div>
       </div>
       <div id="contact">
-        <div><h2>Contact Us</h2></div>
+        <div><h3>Contact Us</h3></div>
         <div class="contact">
           <div>
             <form action="">
               <div>
-                <input type="text" required placeholder="NAME" />
+                <input class="form" type="text" required placeholder="NAME" />
               </div>
-              <div><input type="" required placeholder="EMAIL" /></div>
               <div>
-                <textarea name="" id="" placeholder="MESSAGE"></textarea>
+                <input class="form" type="" required placeholder="EMAIL" />
               </div>
-              <div class="button"><button >SUBMIT HERE</button></div>
+              <div>
+                <textarea
+                  class="form"
+                  name=""
+                  id=""
+                  placeholder="MESSAGE"
+                ></textarea>
+              </div>
+              <div><button>SUBMIT HERE</button></div>
             </form>
           </div>
         </div>
       </div>
     </section>
-    <footer>
+    <footer class="foot">
       <div>
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-instagram"></i>
       </div>
       <div>
-        <p>2022 <span class="green">TEA STATION</span> ALL RIGHTS RESEREVED</p>
+        <p>©2022 <span class="green">TEA STATION</span> ALL RIGHTS RESEREVED</p>
       </div>
     </footer>
   </body>

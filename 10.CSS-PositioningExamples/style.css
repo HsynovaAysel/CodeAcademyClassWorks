@@ -1,0 +1,60 @@
+body {
+  height: 400vh;
+}
+.container {
+  height: 300vh;
+  height: 100vh;
+}
+.content {
+  height: 60vh;
+  background-color: rgba(224, 221, 221, 0.925);
+  width: 60%;
+  border: 2px solid green;
+  position: relative;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  font-size: 20px;
+}
+.abox,
+.dbox,
+.fbox {
+  background-color: red;
+}
+.abox {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.bbox {
+  background-color: orange;
+  top: 40px;
+  position: absolute;
+  left: 40px;
+  opacity: 0.8;
+  z-index: 1;
+}
+.cbox {
+  background-color: yellow;
+  top: 80px;
+  position: absolute;
+  left:80px;
+}
+.dbox {
+  position: sticky;
+ left: 100%;
+ top: 0;
+}
+.ebox {
+  position: absolute;
+  background-color: green;
+  left: 40%;
+  bottom: 15px;
+}
+.fbox {
+  position: absolute;
+  right: 0;
+  position: fixed;
+}

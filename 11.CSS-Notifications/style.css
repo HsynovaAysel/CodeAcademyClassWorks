@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#notifications{
+    height: 50vh;
+    background-color: grey;
+    width: 30vh;
+}

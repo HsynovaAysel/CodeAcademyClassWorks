@@ -44,6 +44,7 @@ header .header {
   height: 40px;
   width: 85px;
   border: none;
+  font-size: 16px;
 }
 .header .click .sign {
   background-color: #b8e4da;
@@ -112,6 +113,7 @@ header .header {
 }
 /* BANNER SECTION  */
 #banner-section {
+  padding: 20px 0;
   bottom: 5px;
   background-color: #20484f;
   position: relative;
@@ -147,6 +149,68 @@ header .header {
 }
 .image {
   width: 100%;
+}
+/* Sign UP SECTION */
+.sign-up {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign-up h5 {
+  color: #20484f;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.sign-up h1 {
+  margin: 25px 0;
+  width: 40%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.sign-up button {
+  border: none;
+  background-color: #20484f;
+  color: white;
+  border-radius: 5px;
+  width: 150px;
+  height: 40px;
+}
+.sign-up button:hover {
+  border: 1px solid #20484f;
+  background-color: transparent;
+  color: #20484f;
+  cursor: pointer;
+}
+/* BREND SECTION  */
+#brend {
+  width: 100%;
+  border-bottom: 1px solid rgb(195, 191, 191);
+  border-top: 1px solid rgb(195, 191, 191);
+}
+.brend {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.brend .logo {
+  align-items: center;
+  justify-content: center;
+}
+.brend .logo img {
+  width: 100px;
+  margin: 15px;
+}
+.brend h4 {
+  font-weight: 400;
+  color: #20484f;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.brend .logo img:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 /* NEXT SECTION */
 .next-section .content {
@@ -205,7 +269,7 @@ footer p {
 .footer .fa-brands {
   border: 1px solid white;
   border-radius: 50px;
-
+  padding: 10px;
   margin: 10px;
   color: white;
 }
@@ -253,5 +317,4 @@ footer .LTD {
     flex-direction: column;
     align-items: center;
   }
- 
 }

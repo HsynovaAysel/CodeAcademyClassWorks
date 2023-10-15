@@ -10,15 +10,14 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-.background {
+.image-section {
   background-image: url("./image/image\ 3.svg");
   height: 100vh;
   background-size: cover;
   background-position: bottom;
-  padding: 20px 0;
 }
-
 .header {
+  padding: 50px 0;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -34,23 +33,22 @@
   font-weight: 400;
   font-size: 18px;
 }
-#hero {
+.header .fa-solid {
+  display: none;
+}
+.header .icon {
   display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
+  column-gap: 10px;
 }
 .hero {
-  padding-bottom: 200px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 .hero .content {
   max-width: 834px;
   text-align: center;
-
   font-size: 48px;
   font-weight: 600;
   line-height: 72px;
@@ -66,16 +64,15 @@
   margin: 30px 0;
 }
 .input-btn {
-  border: 2px solid white;
-  border-radius: 30px;
   display: inline-block;
   position: relative;
 }
 .input-btn input {
+  border: 2px solid white;
   padding: 0 30px;
-  opacity: 0.5;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 30px;
-  border: none;
+  outline: none;
   height: 60px;
   width: 360px;
 }
@@ -87,14 +84,81 @@
   right: 15px;
   bottom: 10px;
 }
-
+::placeholder {
+  font-size: 18px;
+  color: white;
+}
+.banner {
+  padding: 50px 0;
+  display: flex;
+}
+.banner .box {
+  width: 25%;
+  margin: 0 10px;
+}
+#banner .choosing-text {
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-left: 6%;
+}
+.banner .content {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.banner .text {
+  font-size: 18px;
+}
+.banner .info {
+  margin-top: 30px;
+  color: rgba(247, 148, 137, 1);
+  font-size: 18px;
+}
+.firstbox {
+  padding: 10px;
+  border: 1px solid rgba(247, 148, 137, 1);
+  border-radius: 10px;
+  box-shadow: 3px 2px 5px palevioletred;
+}
 @media screen and (max-width: 1200px) {
   .container {
     padding: 0 5%;
   }
 }
 @media screen and (max-width: 767px) {
+  .black-section {
+    height: 100%;
+    background-color: rgba(1, 1, 1, 0.5);
+  }
   nav {
     display: none;
+  }
+  .header .fa-solid {
+    display: block;
+    color: white;
+    font-size: 30px;
+  }
+  .hero {
+    padding-top: 80px;
+  }
+  .hero .text {
+    max-width: 420px;
+  }
+  .hero .content {
+    max-width: 600px;
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .input-btn input {
+    width: 480px;
+  }
+
+  .banner {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .banner .box {
+    width: 100%;
   }
 }

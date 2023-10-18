@@ -212,6 +212,9 @@ header .header {
   opacity: 0.5;
   cursor: pointer;
 }
+.brend h4 span{
+  font-weight: 700;
+}
 /* NEXT SECTION */
 .next-section .content {
   display: flex;

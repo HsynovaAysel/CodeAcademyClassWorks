@@ -16,6 +16,7 @@
   background-size: cover;
   background-position: bottom;
 }
+
 .header {
   padding: 50px 0;
   height: 50px;
@@ -93,6 +94,7 @@
   display: flex;
 }
 .banner .box {
+  border: 1px solid transparent;
   width: 25%;
   margin: 0 10px;
 }
@@ -100,7 +102,6 @@
   font-size: 36px;
   font-weight: 500;
   margin-top: 50px;
-  margin-left: 6%;
 }
 .banner .content {
   margin: 10px 0;
@@ -115,12 +116,48 @@
   color: rgba(247, 148, 137, 1);
   font-size: 18px;
 }
-.firstbox {
-  padding: 10px;
+.box:hover {
   border: 1px solid rgba(247, 148, 137, 1);
-  border-radius: 10px;
   box-shadow: 3px 2px 5px palevioletred;
+  border-radius: 10px;
 }
+.next {gap: 30px;
+  width: 100%;
+  display: flex;
+}
+.next .left {
+  width: 50%;
+}
+.left h1 { color: #564e4e;
+  font-size: 36px;
+  font-weight: 500;
+}
+.left .content {margin: 20px 0;
+  font-size: 18px;
+  color: #564e4e;
+}
+.left ul{
+  
+}
+.left ul li {margin: 30px 0;
+  color: #564e4e;
+  font-size: 18px;
+}
+.left .text{ margin: 20px 0;
+font-weight: 300;
+line-height: 36px;
+}
+.pink-text{
+  color:#F79489 ;
+font-size: 18px;
+}
+.next .right {
+  width: 50%;
+}
+.right img{height: 100%;
+  width: 100%;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     padding: 0 5%;
@@ -149,9 +186,6 @@
     max-width: 600px;
     font-size: 35px;
     line-height: 50px;
-  }
-  .input-btn input {
-    width: 480px;
   }
 
   .banner {

@@ -1,0 +1,54 @@
+header {
+  background-color: $primary-color;
+  .header {
+    padding: 10px;
+    .fa-solid {
+      display: none;
+      color: $color-white;
+    }
+
+    .sigin-btn {
+      @extend %sigin-btn;
+
+      &:hover {
+        background-color: $color-white;
+        border: 1px solid $primary-color;
+        color: $primary-color;
+      }
+    }
+
+    @include flex(space-between);
+    nav {
+      ul {
+        display: flex;
+        gap: 20px;
+
+        li {
+          padding: 5px;
+          border-radius: 5px;
+          &:hover {
+            background-color: $color-white;
+          }
+          a {
+            color: $color-white;
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .fa-solid {
+        display: block;
+      }
+      nav {
+        display: none;
+      }
+      .sigin-btn {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+#hero-banner .hero-banner .btn .learn-more, #hero-banner .hero-banner .btn .get-quote-now {
+  max-width: 250px;
+  height: 48px;
+  border-radius: 37px;
+  color: white;
+  background-color: #784F33;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  padding: 0 50px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+header .header .logo-nav {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+header .header .logo-nav h3 {
+  font-size: 24px;
+  font-family: "Martel", serif;
+  font-weight: 700;
+  color: #252B42;
+}
+header .header .logo-nav nav ul {
+  display: flex;
+  gap: 20px;
+}
+header .header .logo-nav nav ul li a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #737373;
+}
+
+#hero-banner {
+  background-image: url("../image/cover.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 64px 0;
+}
+#hero-banner .hero-banner h1 {
+  font-family: "Martel", serif;
+  font-size: 58px;
+  font-weight: 900;
+  line-height: 65px;
+  color: #252B42;
+  max-width: 509px;
+}
+#hero-banner .hero-banner h4 {
+  font-family: "Martel", serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #737373;
+  max-width: 376px;
+}
+#hero-banner .hero-banner .btn .learn-more {
+  color: #784F33;
+  border: 1px solid #784F33;
+  background-color: transparent;
+}/*# sourceMappingURL=stle.css.map */

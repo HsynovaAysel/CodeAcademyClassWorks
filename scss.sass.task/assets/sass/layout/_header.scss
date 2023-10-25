@@ -1,0 +1,37 @@
+header {
+  position: fixed;
+  width: 100%;
+  .header {
+    @include flex(space-between);
+    padding: 20px 0;
+    .logo-nav {
+      @include flex(unset, center);
+      column-gap: 40px;
+      h3 {
+        font-size: 24px;
+        font-family: $font;
+        font-weight: 700;
+        color: $primary-color;
+      }
+      nav {
+        ul {
+          display: flex;
+          gap: 20px;
+          li {
+            a {
+              font-family: $font-open;
+              font-size: 14px;
+              font-weight: 600;
+              color: $second-text;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width:767px){
+      nav{
+        display: none;
+      }
+    }
+  }
+}

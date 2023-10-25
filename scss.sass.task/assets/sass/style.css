@@ -147,6 +147,59 @@ table {
   }
 }
 
+#hero-banner .hero-banner .btn .learn-more, #hero-banner .hero-banner .btn .get-quote-now, footer .footer .content-btn .footer-btn {
+  max-width: 250px;
+  height: 48px;
+  border-radius: 37px;
+  color: white;
+  background-color: #784F33;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  padding: 0 50px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+header .header .logo-nav {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+header .header .logo-nav h3 {
+  font-size: 24px;
+  font-family: "Martel", serif;
+  font-weight: 700;
+  color: #252B42;
+}
+header .header .logo-nav nav ul {
+  display: flex;
+  gap: 20px;
+}
+header .header .logo-nav nav ul li a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #737373;
+}
+@media screen and (max-width: 767px) {
+  header .header nav {
+    display: none;
+  }
+}
+
 footer .footer {
   padding: 20px 0;
 }
@@ -155,19 +208,22 @@ footer .footer .content-btn {
   justify-content: space-between;
   align-items: center;
 }
+footer .footer .content-btn .footer-btn {
+  border-radius: 5px;
+}
 footer .footer .content-btn .text {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 footer .footer .content-btn .text h3 {
-  font-family: Martel;
+  font-family: "Martel", serif;
   font-size: 24px;
   font-weight: 700;
-  color: #252b42;
+  color: #252B42;
 }
 footer .footer .content-btn .text p {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #737373;
@@ -184,7 +240,7 @@ footer .navigation .container nav {
 }
 footer .navigation .container nav h5 {
   margin: 10px 0;
-  font-family: Martel;
+  font-family: "Martel", serif;
   font-size: 16px;
   font-weight: 700;
   color: white;
@@ -193,10 +249,13 @@ footer .navigation .container nav ul li {
   margin: 10px 0;
 }
 footer .navigation .container nav ul li a {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: white;
+}
+footer .navigation .container nav ul li img {
+  margin: 0 10px;
 }
 footer .sosial-icon {
   padding: 20px 0;
@@ -207,7 +266,7 @@ footer .sosial-icon .container {
   align-items: center;
 }
 footer .sosial-icon .container h6 {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 700;
   color: #737373;
@@ -215,6 +274,124 @@ footer .sosial-icon .container h6 {
 footer .sosial-icon .container .icon {
   display: flex;
   gap: 20px;
+}
+@media screen and (max-width: 767px) {
+  footer .footer .content-btn {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .footer .content-btn .text h3 {
+    max-width: 183px;
+  }
+  footer .footer .content-btn .text p {
+    max-width: 170px;
+  }
+  footer .navigation .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .navigation .container nav {
+    width: 80%;
+  }
+  footer .sosial-icon .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .sosial-icon .container h6 {
+    max-width: 200px;
+  }
+}
+
+#hero-banner {
+  background-image: url("../images/cover.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+#hero-banner .hero-banner .cards {
+  margin-top: 50px;
+  display: flex;
+}
+#hero-banner .hero-banner .cards .law {
+  padding: 20px;
+  margin: 10px;
+  width: 25%;
+  background-color: white;
+}
+#hero-banner .hero-banner .cards .law h3 {
+  font-family: "Martel", serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #252B42;
+}
+#hero-banner .hero-banner .cards .law p {
+  max-width: 203px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #737373;
+  line-height: 20px;
+}
+#hero-banner .hero-banner .cards .law:last-child {
+  background-color: #252B42;
+}
+#hero-banner .hero-banner .cards .law:last-child h3 {
+  color: white;
+}
+#hero-banner .hero-banner .cards .law:last-child p {
+  color: white;
+}
+#hero-banner .hero-banner h1 {
+  font-family: "Martel", serif;
+  font-size: 58px;
+  font-weight: 900;
+  line-height: 65px;
+  color: #252B42;
+  max-width: 509px;
+}
+#hero-banner .hero-banner h4 {
+  margin: 20px 0;
+  font-family: "Martel", serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #737373;
+  max-width: 376px;
+}
+#hero-banner .hero-banner .btn .learn-more {
+  color: #784F33;
+  border: 1px solid #784F33;
+  background-color: transparent;
+}
+@media screen and (max-width: 767px) {
+  #hero-banner .hero-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #hero-banner .hero-banner h1 {
+    text-align: center;
+  }
+  #hero-banner .hero-banner h4 {
+    max-width: 279px;
+  }
+  #hero-banner .hero-banner .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  #hero-banner .hero-banner .cards {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  #hero-banner .hero-banner .cards .law {
+    width: 50%;
+  }
 }
 
 #banner {
@@ -235,12 +412,12 @@ footer .sosial-icon .container .icon {
   font-family: "Martel", serif;
   font-size: 40px;
   font-weight: 700;
-  color: #252b42;
+  color: #252B42;
 }
 #banner .banner .content p {
   max-width: 468px;
   margin: 20px 0;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #737373;
@@ -272,11 +449,11 @@ footer .sosial-icon .container .icon {
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
-  color: #252b42;
+  color: #252B42;
 }
 #third .content p {
   text-align: center;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -305,11 +482,11 @@ footer .sosial-icon .container .icon {
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
-  color: #252b42;
+  color: #252B42;
 }
 #third .third .right p {
   max-width: 306px;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;

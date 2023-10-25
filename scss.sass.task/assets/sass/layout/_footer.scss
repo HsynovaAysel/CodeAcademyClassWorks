@@ -1,22 +1,27 @@
 footer {
-  .footer {padding: 20px 0;
+  .footer {
+    padding: 20px 0;
     .content-btn {
       @include flex(space-between);
+      .footer-btn {
+        @extend %btn;
+        border-radius: 5px;
+      }
       .text {
         display: flex;
         flex-direction: column;
         gap: 20px;
         h3 {
-          font-family: Martel;
+          font-family: $font-martel;
           font-size: 24px;
           font-weight: 700;
-          color: #252b42;
+          color: $primary-color;
         }
         p {
-          font-family: Open Sans;
+          font-family: $font-open;
           font-size: 14px;
           font-weight: 400;
-          color: #737373;
+          color: $second-text;
         }
       }
     }
@@ -30,37 +35,77 @@ footer {
         width: 20%;
         h5 {
           margin: 10px 0;
-          font-family: Martel;
+          font-family: $font-martel;
           font-size: 16px;
           font-weight: 700;
-          color: white;
+          color: $color-white;
         }
         ul {
           li {
             margin: 10px 0;
+
             a {
-              font-family: Open Sans;
+              font-family: $font-open;
               font-size: 14px;
               font-weight: 600;
-              color: white;
+              color: $color-white;
+            }
+            img {
+              margin: 0 10px;
             }
           }
         }
       }
     }
   }
-  .sosial-icon {padding: 20px 0;
+  .sosial-icon {
+    padding: 20px 0;
     .container {
       @include flex(space-between);
       h6 {
-        font-family: Open Sans;
+        font-family: $font-open;
         font-size: 14px;
         font-weight: 700;
-        color: #737373;
+        color: $second-text;
       }
       .icon {
         display: flex;
         gap: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .footer {
+      .content-btn {
+        flex-direction: column;
+        gap: 20px;
+        .text {
+          h3 {
+            max-width: 183px;
+          }
+          p {
+            max-width: 170px;
+          }
+        }
+      }
+    }
+    .navigation {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        nav {
+          width: 80%;
+        }
+      }
+    }
+
+    .sosial-icon {
+      .container {
+        flex-direction: column;
+        gap: 20px;
+        h6 {
+          max-width: 200px;
+        }
       }
     }
   }

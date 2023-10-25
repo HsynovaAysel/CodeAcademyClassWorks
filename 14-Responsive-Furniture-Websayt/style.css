@@ -89,26 +89,31 @@
   font-size: 18px;
   color: white;
 }
+
 .banner {
   padding: 50px 0;
   display: flex;
 }
 .banner .box {
+  padding: 0 10px;
   border: 1px solid transparent;
   width: 25%;
   margin: 0 10px;
 }
 #banner .choosing-text {
+  color: #564e4e;
   font-size: 36px;
   font-weight: 500;
   margin-top: 50px;
 }
 .banner .content {
+  color: #564e4e;
   margin: 10px 0;
   font-size: 18px;
   font-weight: 500;
 }
 .banner .text {
+  color: #564e4e;
   font-size: 18px;
 }
 .banner .info {
@@ -117,47 +122,104 @@
   font-size: 18px;
 }
 .box:hover {
+  transform: scale(1.1);
   border: 1px solid rgba(247, 148, 137, 1);
   box-shadow: 3px 2px 5px palevioletred;
   border-radius: 10px;
 }
-.next {gap: 30px;
-  width: 100%;
+
+.next {
+  gap: 30px;
   display: flex;
+
+  align-items: center;
 }
 .next .left {
   width: 50%;
 }
-.left h1 { color: #564e4e;
-  font-size: 36px;
-  font-weight: 500;
-}
-.left .content {margin: 20px 0;
-  font-size: 18px;
-  color: #564e4e;
-}
-.left ul{
-  
-}
-.left ul li {margin: 30px 0;
-  color: #564e4e;
-  font-size: 18px;
-}
-.left .text{ margin: 20px 0;
-font-weight: 300;
-line-height: 36px;
-}
-.pink-text{
-  color:#F79489 ;
-font-size: 18px;
-}
 .next .right {
   width: 50%;
 }
-.right img{height: 100%;
+.right img {
   width: 100%;
 }
-
+.left h1 {
+  color: #564e4e;
+  font-size: 36px;
+  font-weight: 500;
+}
+.left .content {
+  font-size: 18px;
+  color: #564e4e;
+}
+.left ul li {
+  color: #564e4e;
+  font-size: 18px;
+}
+.left .text {
+  font-weight: 300;
+  line-height: 36px;
+}
+.pink-text {
+  color: #f79489;
+  font-size: 18px;
+}
+#product {
+  padding: 50px 0;
+}
+.product {
+  gap: 20px;
+  display: flex;
+}
+.top,
+.bottom {
+  display: flex;
+  gap: 20px;
+}
+.product .image {
+  width: 50%;
+}
+.product .image .tablet {
+  width: 100%;
+}
+#product p {
+  color: #564e4e;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+  margin: 50px 0;
+}
+#services {
+  background-color: #faf5f2;
+  padding: 30px 0;
+}
+#services .services-text {
+  margin: 50px 0;
+  color: #564e4e;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+}
+.services {
+  gap: 20px;
+  display: flex;
+}
+.services .content {
+  color: #564e4e;
+  font-size: 24px;
+}
+.services .text {
+  margin: 20px 0;
+  max-width: 540px;
+  color: #564e4e;
+  font-size: 18px;
+}
+.user {
+  width: 33%;
+}
+.woods {
+  margin-top: 28px;
+}
 @media screen and (max-width: 1200px) {
   .container {
     padding: 0 5%;
@@ -193,6 +255,28 @@ font-size: 18px;
     row-gap: 20px;
   }
   .banner .box {
-    width: 100%;
+    width: 95%;
+  }
+  #banner .choosing-text {
+    display: none;
+  }
+  .next {
+    flex-direction: column-reverse;
+  }
+  .next .left {
+    width: 95%;
+  }
+  .next .right {
+    width: 95%;
+  }
+  .product {
+    flex-direction: column;
+  }
+  .services {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .user {
+    width: 95%;
   }
 }

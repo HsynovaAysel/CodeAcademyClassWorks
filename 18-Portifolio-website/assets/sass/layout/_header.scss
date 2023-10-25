@@ -1,0 +1,39 @@
+header {
+  padding: 20px 0;
+  background-color: $primary-color;
+  .header {
+    @include flex(space-between);
+    nav {
+      ul {
+        display: flex;
+        gap: 50px;
+        li {
+          a {
+            font-family: $font-stack;
+            font-size: 16px;
+            font-weight: 400;
+            color: $color-white;
+          }
+        }
+      }
+    }
+    .agency-btn {
+      @extend %first-btn;
+    }
+    .menu {
+      display: none;
+    }
+    @media screen and (max-width: 767px) {
+      nav {
+        display: none;
+      }
+      .agency-btn {
+        display: none;
+      }
+
+      .menu {
+        display: block;
+      }
+    }
+  }
+}

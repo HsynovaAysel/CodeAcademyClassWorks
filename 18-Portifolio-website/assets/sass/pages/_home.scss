@@ -1,0 +1,123 @@
+#hero-banner {
+  padding: 50px 0;
+  background-color: $primary-color;
+  .hero-banner {
+    @include flex();
+    flex-direction: column;
+    h1 {
+      font-family: $font-stack;
+      font-size: 72px;
+      font-weight: 800;
+      color: $color-white;
+      margin-bottom: 30px;
+    }
+    p {
+      text-align: center;
+      color: #ffffffa3;
+      font-family: $font-stack;
+      max-width: 570px;
+    }
+  }
+}
+
+#banner {
+  background-color: $secondary-color;
+  padding: 50px 0;
+  .banner {
+    .load-more-btn {
+      @include flex();
+      button {
+        @extend %second-btn;
+      }
+    }
+
+    input {
+      display: none;
+      @extend %show-all-input;
+      &::placeholder {
+        padding: 0 10px;
+        font-family: $font-stack;
+        color: $text-color;
+      }
+    }
+    nav {
+      ul {
+        @include flex();
+        gap: 50px;
+        li {
+          a {
+            font-family: $font-stack;
+            color: $text-color;
+          }
+        }
+      }
+    }
+    .cards {
+      padding: 50px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      .card-design {
+        width: 31%;
+        position: relative;
+        .image {
+          display: flex;
+          gap: 20px;
+          flex-direction: column;
+          position: absolute;
+          left: 20px;
+          bottom: 20px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      input {
+        display: block;
+      }
+      nav {
+        display: none;
+      }
+      .cards {
+        flex-direction: column;
+        .card-design {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+#next {
+    background-color: $secondary-color;
+  .next {padding: 80px 50px; border-radius: 5px;
+    background-color: $next-color;
+    @include flex(space-evenly);
+    .left {width: 50%;
+      h2 {
+        font-family: $font-stack;
+        font-size: 56px;
+        font-weight: 800;
+        color: $color-white;
+        max-width: 368px;
+      }
+      p {margin: 30px 0;
+        text-align: center;
+        color: #ffffffa3;
+        font-family: $font-stack;
+        max-width: 470px;
+        text-align: left;
+line-height: 32px;
+      }
+      button{
+        @extend %second-btn;
+      }
+    }
+    .right{
+        width: 30%;
+        img{
+            width: 100%;
+        }
+    }
+  }
+}

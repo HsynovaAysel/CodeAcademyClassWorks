@@ -8,14 +8,18 @@
   .hero-banner {
     .cards {
       width: 100%;
-      position: absolute;
-      top: 70%;
+      // max-width: 1200px;
+      position: relative;
+      top: 250px;
+      left: 0;
       margin-top: 50px;
       display: flex;
-      .law {box-shadow: 2px 2px 10px black;
-        padding: 20px;
+      justify-content: space-between;
+      .law {
+        box-shadow: 2px 2px 10px black;
+        padding: 50px 20px;
         margin: 10px;
-        width: 25%;
+        width: 30%;
         background-color: $color-white;
         h3 {
           font-family: $font-martel;
@@ -90,7 +94,8 @@
         align-items: center;
         gap: 20px;
       }
-      .cards {position: unset;
+      .cards {
+        position: unset;
         width: 100%;
         flex-direction: column;
         align-items: center;
@@ -103,7 +108,7 @@
 }
 
 #banner {
-  padding: 150px 0 50px 0;
+  padding: 250px 0 50px 0;
   background-color: $banner-section;
   .banner {
     @include flex();
@@ -131,6 +136,11 @@
     .card {
       display: flex;
       gap: 20px;
+      .image {
+        img {
+          width: 100%;
+        }
+      }
     }
     @media screen and (max-width: 767px) {
       .card {

@@ -1,0 +1,49 @@
+#home {
+  .home {
+    .left {
+      h2 {
+        font-family: $font-sans;
+        font-size: 55px;
+        font-weight: 200;
+        letter-spacing: 20px;
+        color: $text-color;
+      }
+      h1 {
+        font-family: $font-sans;
+        font-size: 65px;
+        font-weight: 600;
+        letter-spacing: 20px;
+        color: $text-dark;
+        width: 500px;
+      }
+      p {
+        font-family: $font-sans;
+        font-size: 23px;
+        color: $text-color;
+        width: 500px;
+      }
+
+      .input-btn {border-radius: 30px;
+        border: 1px solid $text-color;
+        input {
+          border: none;
+          outline: none;
+        }
+        button {position: relative;
+          background-color: $text-color;
+          border: none;
+          color: white;
+          width: 100px;
+          height: 70px;
+          border-radius: 30px;
+          font-size: 30px;
+        }
+      }
+    }
+    .right {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
